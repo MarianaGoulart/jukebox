@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jukebox</title>
+</head>
+<body>
+    <nav class="nav is-flex is-padded">
+        <div class="nav-logo">
+            <img src="images/jukebox-logo-blue.png" alt="JukeBox">
+        </div>
+        <ul class="nav-links is-flex">
+            <div class="is-tablet" id="hamburger-menu">
+                <i class="fa fa-bars is-padded"></i>
+            </div>
+            <div class="is-flex flexdirection is-center">
+                <li><a href="#" class="nav-subscribe is-rounded is-padded">Subscribe</a></li>
+                <li><a href="#" class="nav-login is-rounded is-padded">Log In</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header class="header is-flex">
+        <div class="header__container is-flex">
+            <h1 class="is-padded">Millions of songs at your fingertips.</h1>
+            <h3 class="is-padded">Play any song, anywhere, on any device.</h3>
+            <div class="is-padded">
+                <a href="#" class="nav-subscribe is-rounded is-padded"><b>Subscribe Today</b></a>
+            </div>
+        </div>
+    </header>    
+    <main>
+        <article class="article is-flex">
+            <h1>Your Music. Your way.</h2>
+            <h3>Upgrade to premium and get your first two months free of charge.</h3>
+            <div class="fee is-flex flexdirection">
+                <div class="fee__card is-flex is-padded fee__card-basic is-rounded">
+                    <div class="fee__card-title">Basic</div>
+                    <div class="fee__card-price">Free</div>
+                    <ul class="fee__card-benefits is-flex">
+                        <li>MP3 audio</li>
+                        <li>100 songs</li>
+                        <li>Ads every 10 minutes</li>
+                        <li>Up to 1 user</li>
+                        <li>1 device</li>
+                    </ul>
+                    <a href="#" class="fee__card-signup is-rounded is-padded">Sign Up</a>
+                </div>
+                <div class="fee__card is-flex is-padded fee__card-plus is-rounded">
+                    <div class="fee__card-title">Plus</div>
+                    <div class="fee__card-price">$10/Month</div>
+                    <ul class="fee__card-benefits is-flex">
+                        <li>16-bit audio</li>
+                        <li>200 songs</li>
+                        <li>No ads</li>
+                        <li>Up to 3 users</li>
+                        <li>2 device</li>
+                    </ul>
+                    <a href="#" class="fee__card-signup is-rounded is-padded">Sign Up</a>
+                </div>
+                <div class="fee__card is-flex is-padded fee__card-premium is-rounded">
+                    <div class="fee__card-title">Premium</div>
+                    <div class="fee__card-price">$20/Month</div>
+                    <ul class="fee__card-benefits is-flex">
+                        <li>Lossless Hi-Fi audio</li>
+                        <li>Unlimited songs</li>
+                        <li>No ads</li>
+                        <li>Up to 5 users</li>
+                        <li>Unlimited devices</li>
+                    </ul>
+                    <a href="#" class="fee__card-signup is-rounded is-padded">Sign Up</a>
+                </div>
+            </div>
+        </article>
+        <article class="article about is-flex">
+            <div class="about__card is-flex is-padded">
+                <div class="about__card-image">
+                    <img src="images/icon-1.png" alt="Mobile">
+                </div>
+                <div class="about__card-title is-padded">Stream to Any Device</div>
+                <div class="about__card-subtitle">Play all your favourite music on any device. Anytime. Anywhere.</div>
+            </div>
+            <div class="about__card is-flex is-padded">
+                <div class="about__card-image">
+                    <img src="images/icon-2.png" alt="Sound">
+                </div>
+                <div class="about__card-title is-padded">High Quality Audio</div>
+                <div class="about__card-subtitle">Get the best sounding audio of any streaming service on the web.</div>
+            </div>
+            <div class="about__card is-flex is-padded">
+                <div class="about__card-image">
+                    <img src="images/icon-3.png" alt="Music Sign">
+                </div>
+                <div class="about__card-title is-padded">Millions of Songs</div>
+                <div class="about__card-subtitle">Find all your favourite artists in our extensive music library.</div>
+            </div>
+        </article>
+        <article class="article is-flex">
+            <h1>All your favourite artists. In one place.</h1>
+            <h3>Upgrade to premium and get your first 2 months free of charge.</h3>
+            <div class="artist is-flex">
+                <img src="images/album1.png" class="artist__card">
+                <img src="images/album2.png" class="artist__card">
+                <img src="images/album3.png" class="artist__card">
+                <img src="images/album4.png" class="artist__card">
+                <img src="images/album5.png" class="artist__card">
+                <img src="images/album6.png" class="artist__card">
+            </div>
+        </article>
+    </main>
+    <footer class="footer is-padded is-flex">
+        <div>
+            <img src="images/jukebox-logo-white.png">
+        </div>
+        <div>
+            <img src="images/social-fb.png" class="is-padded">
+            <img src="images/social-twitter.png" class="is-padded">
+            <img src="images/social-insta.png" class="is-padded">
+            <img src="images/social-vimeo.png" class="is-padded">
+        </div>
+    </footer>
+    <script>
+        let hamburger = document.getElementById('hamburger-menu');
+        let menu = document.getElementById('');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('is-active');
+            menu.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
